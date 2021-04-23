@@ -1,0 +1,11 @@
+<p>Lista usando o pipe async com ngIf e ngFor</p>
+
+<div *ngIf="products$ | async as products; else noProducts">
+	<ul>
+		<li *ngFor="let product of products">
+			<p>{{ product.name }}</p>
+			<span>{{ product.category }}</span>
+		</li>
+	</ul>
+</div>
+<ng-template #noProducts><p>Não há produtos</p></ng-template>

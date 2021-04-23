@@ -1,0 +1,5 @@
+<p>Botão usando o pipe async</p>
+
+<button [disabled]="(products$ | async)">Clique</button>
+
+<button [disabled]="!(products$ | async)">Clique</button>

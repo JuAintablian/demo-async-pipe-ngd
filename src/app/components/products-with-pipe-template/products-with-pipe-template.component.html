@@ -1,0 +1,10 @@
+<p>Lista usando o pipe async com ng-template</p>
+
+<ul>
+  <ng-template ngFor [ngForOf]="products$ | async" let-product>
+  	<li>
+	    <p>{{ product.name }}</p>
+		<span>{{ product.category }}</span>
+	</li>
+  </ng-template>
+</ul>

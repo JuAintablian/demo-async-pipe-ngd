@@ -1,0 +1,8 @@
+<p>Lista usando o pipe async com ngFor</p>
+
+<ul>
+  <li *ngFor="let product of products$ | async">
+    <p>{{ product.name }}</p>
+	<span>{{ product.category }}</span>
+  </li>
+</ul>
